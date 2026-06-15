@@ -40,7 +40,7 @@ An event that cuts the block reward in half, mirroring Bitcoin's emission schedu
 
 ## Jail / Unjail
 
-When a validator misses too many blocks or double-signs, it is *jailed*: removed from the active set and its stake slashed. A jailed validator must submit an *unjail* transaction (after a cooldown period) to re-enter the active set.
+When a validator misses too many blocks it is *jailed*: removed from the active set. Double-signing (equivocation) is a separate offence that may result in slashing. A jailed validator must go through the unjail / AddSelfStake path (after a cooldown period) to re-enter the active set.
 
 ## libp2p
 
@@ -62,7 +62,7 @@ The Rust-native EVM implementation used by Sentrix for transaction execution. Ch
 
 ## SRX / sentri
 
-**SRX** is the native token of Sentrix Chain. *Sentri* is an informal nickname. SRX is used for gas fees, staking, and governance.
+**SRX** is the native token of Sentrix Chain, used for gas fees, staking, and governance. **Sentri** is the smallest unit of SRX — 1 SRX = 100,000,000 sentri (analogous to wei or satoshi).
 
 - **Max supply:** 315 million SRX
 - **Premine:** 20% of cap
