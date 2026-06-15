@@ -20,7 +20,7 @@ Open MetaMask → **Settings → Networks → Add a network** and fill in:
 | **RPC URL** | `https://rpc.sentrixchain.com/rpc` | `https://testnet-rpc.sentrixchain.com/rpc` |
 | **Chain ID** | `7119` | `7120` |
 | **Currency Symbol** | `SRX` | `SRX` |
-| **Block Explorer** | `https://explorer.sentrixchain.com` | `https://testnet-explorer.sentrixchain.com` |
+| **Block Explorer** | `https://scan.sentrixchain.com` | `https://scan-testnet.sentrixchain.com` |
 
 Full walkthrough: [MetaMask Network Config](operations/metamask).
 
@@ -58,7 +58,7 @@ Full reference: [API Endpoints](operations/api-endpoints) · [WebSocket Subscrip
 
 ## How do I verify a smart contract?
 
-After deploying, navigate to your contract on the [Sentrix Explorer](https://explorer.sentrixchain.com), go to the **Contract** tab, and click **Verify & Publish**. Provide the source code, compiler version, and optimisation settings you used during deployment.
+After deploying, navigate to your contract on the [Sentrix Explorer](https://scan.sentrixchain.com), go to the **Contract** tab, and click **Verify & Publish**. Provide the source code, compiler version, and optimisation settings you used during deployment.
 
 See the full guide in [Smart Contract Guide](operations/smart-contract-guide).
 
@@ -68,7 +68,7 @@ See the full guide in [Smart Contract Guide](operations/smart-contract-guide).
 
 | | |
 |---|---|
-| **Block time** | 1 second |
+| **Block time** | ~1–2 seconds |
 | **Finality** | Instant — Voyager DPoS+BFT achieves supermajority finality within the same block |
 
 Unlike probabilistic finality chains, once a Sentrix block is committed it cannot be reverted under normal network conditions. You don't need to wait for confirmations.
