@@ -4,6 +4,7 @@ const sidebars: SidebarsConfig = {
   docsSidebar: [
     'intro',
     'governance',
+    'faq',
     {
       type: 'category',
       label: 'Architecture',
